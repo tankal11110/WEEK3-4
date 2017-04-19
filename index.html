@@ -2,12 +2,48 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Prywatność za pomocą domknięcia </title>
+	<title>Film player</title>
+
+	<link rel="stylesheet" href="style.css">
+
+	<link rel="stylesheet" href="bootstrap\css\bootstrap.min.css">
+	<link rel="stylesheet" href="bootstrap\css\bootstrap-theme.min.css">
 	
 </head>
 <body>
-	<h1>4. Prywatność za pomocą domknięcia </h1>
+
+	<div id="player" class="player">
+		<video width="100%">
+
+			<source src="video.ogg" type="video/ogv" />
+			<source src="video.webm" type="video/webm" />
+		</video>
 	
+
+		<div class="controls">
+			<div clas="leftControls">
+				<div class="playPause glyphicon glyphicon-play"></div>
+			</div>
+			
+			<div class="progressBar">
+				<input id="timeBar" type="range" min="0" max="100" value="0">
+			</div>
+			
+			<div class="rightControls">
+				<div class="time">
+					<span class="currentTime">0 : 00</span>
+					/
+					<span class="totalTime">0 : 00</span>
+				</div>
+				<div class="volume glyphicon glyphicon-volume-up">
+					<input id="volumeBar" type="range" min="0" max="100" value="25">
+				</div>
+			</div>
+		
+		</div>
+
+	</div>
+
 
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script  src="main.js"></script>

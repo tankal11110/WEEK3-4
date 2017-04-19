@@ -1,0 +1,49 @@
+.player{
+	width: 600px;
+	position:relative;
+}
+.controls{
+	background-color: rgba(0,0,0,0.7);
+	font-size: 16px;
+	color: white;
+
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+.controls > div {
+	display: inline-block;
+}
+.playPause{
+	cursor: pointer;
+}
+.playPause::before{
+	position: absolute;
+	top: -18px;
+}
+.progressBar{
+	width: 300px;
+	margin-top: 5px;
+	margin-left: 15px;
+}
+.rightControls > div{
+	display: inline-block;
+}
+
+.volume{
+	margin-left: 5px;
+}
+.volume::before{
+	top: 3px;
+	position: absolute;
+}
+
+.volume input{
+	margin-left: 20%;
+}
+
+.time {
+	vertical-align: top;
+	margin-left: 5px;
+}
